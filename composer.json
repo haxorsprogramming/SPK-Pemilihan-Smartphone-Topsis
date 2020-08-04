@@ -1,0 +1,12 @@
+{
+    "name": "haxorsprogramming/nadha-resto",
+    "description": "Aplikasi manajemen laundry",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Haxorsprogramming",
+            "email": "haxorsuinsu@gmail.com"
+        }
+    ],
+    "require": {}
+}
