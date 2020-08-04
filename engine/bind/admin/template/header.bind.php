@@ -68,11 +68,6 @@
               <i class="nav-icon icon-list"></i> Data Smartphone
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?=HOMEBASE;?>admin/pengujuanUser">
-                <i class="nav-icon icon-doc"></i> Data Pengujian User
-              </a>
-            </li>
           </ul>
         </nav>
         <button class="sidebar-minimizer brand-minimizer" type="button"></button>
