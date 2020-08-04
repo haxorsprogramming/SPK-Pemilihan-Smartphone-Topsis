@@ -26,7 +26,7 @@ $mainRoute = 'home';
 /**
 * Path to  style asset (css, js, dll)
 */
-$styleBase = $homeBase.'ladun';
+$styleBase = $homeBase.'ladun/';
 
 /**
 * Define to public
