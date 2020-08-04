@@ -2,7 +2,7 @@
 
 <!-- Content -->
 
-<main class="main">
+<main class="main" style="margin-top: 30px;">
         <div class="container-fluid">
           <div class="animated fadeIn">
             <div class="row">

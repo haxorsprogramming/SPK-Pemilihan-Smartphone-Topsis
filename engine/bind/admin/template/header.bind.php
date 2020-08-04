@@ -16,6 +16,8 @@
     <!-- Main styles for this application-->
     <link href="<?=STYLEBASE."admin/"; ?>asset/css/style.css" rel="stylesheet">
     <link href="<?=STYLEBASE."admin/"; ?>asset/vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+    <script src="<?=STYLEBASE."admin/"; ?>asset/vendors/jquery/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     <header class="app-header navbar">

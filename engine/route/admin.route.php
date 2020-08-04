@@ -35,6 +35,43 @@ class admin extends Route{
         $this -> bind('/admin/dataKriteria', $data);
     }
 
+    public function dataSmartphone()
+    {
+        $data['hp'] = $this -> state($this -> sn) -> getDataHp();
+        $this -> bind('/admin/dataSmartphone', $data);
+    }
+
+    public function tambahSmartphone()
+    {
+        $this -> bind('/admin/tambahSmartphone');
+    }
+
+    public function prosesTambahSmartphone()
+    {
+        // {'nama':nama, 'harga':harga, 'merek':merek, 'ram':ram, 'baterai':baterai, 'kameraBelakang':kameraBelakang, 'kameraDepan':kameraDepan, 'display':display}
+        $nama = $this -> inp('nama');
+        $harga = $this -> inp('harga');
+        $merek = $this -> inp('merek');
+        $ram = $this -> inp('ram');
+        $baterai = $this -> inp('baterai');
+        $kameraBelakang = $this -> inp('kameraBelakang');
+        $kameraDepan = $this -> inp('kameraDepan');
+        $display = $this -> inp('display');
+        //cek nama dulu 
+
+        $this -> state($this -> sn) -> tambahSmartphone($nama, $harga, $merek, $ram, $baterai, $kameraBelakang, $kameraDepan, $display);
+        $data['status'] = 'sukses';
+        $this -> toJson($data);
+    }
+
+    public function hapusSmartphone()
+    {
+        $id = $this -> inp('id');
+        $this -> state($this -> sn) -> hapusSmartphone($id);
+        $data['status'] = 'sukses';
+        $this -> toJson($data);
+    }
+
     public function logout()
     {
         $this -> goto('login');

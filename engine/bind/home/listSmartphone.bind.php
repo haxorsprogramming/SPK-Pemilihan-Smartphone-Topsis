@@ -99,12 +99,12 @@
                         <tr>
                             <td><?=$no; ?></td>
                             <td><?=$dh['nama_hp']; ?></td>
-                            <td><?=$dh['harga_cap']; ?></td>
+                            <td>Rp. <?=number_format($dh['harga_cap']); ?></td>
                             <td><?=$dh['merek_cap']; ?></td>
                             <td><?=$dh['ram_cap']; ?></td>
-                            <td><?=$dh['baterai_cap']; ?></td>
-                            <td><?=$dh['kamera_belakang_cap']; ?></td>
-                            <td><?=$dh['kamera_depan_cap']; ?></td>
+                            <td><?=$dh['baterai_cap']; ?> mAh</td>
+                            <td><?=$dh['kamera_belakang_cap']; ?> Mp</td>
+                            <td><?=$dh['kamera_depan_cap']; ?> Mp</td>
                             <td><?=$dh['display_cap']; ?></td>
                         </tr>
                     <?php
