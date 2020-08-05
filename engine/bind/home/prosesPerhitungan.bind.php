@@ -200,7 +200,7 @@ function JarakIplus($aplus,$bob){
                     </thead>
                     <tbody>
                     <?php $no = 1; $pembagiNM = pembagiNM($Matrik); foreach($data['hp'] as $dh): 
-                        $MatrikNormalisasi[$no-1]=array($dh['harga_angka']/$pembagiNM[0],$dh['merek_angka']/$pembagiNM[1],$dh['ram_angka']/$pembagiNM[2],$dh['baterai_angka']/$pembagiNM[3],$dh['kamera_belakang_angka']/$pembagiNM[4],$dh['kamera_depan_angka']/$pembagiNM[5],$dh['display']/$pembagiNM[6]);
+                        $MatrikNormalisasi[$no-1]=array($dh['harga_angka']/$pembagiNM[0],$dh['merek_angka']/$pembagiNM[1],$dh['ram_angka']/$pembagiNM[2],$dh['baterai_angka']/$pembagiNM[3],$dh['kamera_belakang_angka']/$pembagiNM[4],$dh['kamera_depan_angka']/$pembagiNM[5],$dh['display_angka']/$pembagiNM[6]);
                     ?> 
                             <tr>
                             <td><?=$no; ?></td>
