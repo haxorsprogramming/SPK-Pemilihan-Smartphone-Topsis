@@ -65,7 +65,7 @@
                             
                             <div class="form-group">
                                     <label for="company">Kriteria Harga</label>
-                                    <select class="form-control" name='txtHarga'>
+                                    <select class="form-control" name='txtHarga' id='txtHarga' onchange='filterHarga()'>
                                         <option value="5"> > Rp. 3.000.000</option>
                                         <option value="4">Rp. 2.500.000 - Rp. 2.999.999</option>
                                         <option value="3">Rp. 2.000.000 - Rp. 2.499.999</option>
@@ -85,7 +85,7 @@
                             </div>
                             <div class="form-group">
                                     <label for="company">RAM/ROM</label>
-                                    <select class="form-control" name='txtRam'>
+                                    <select class="form-control" id='txtRam' name='txtRam'>
                                         <option value="5">> 4/64</option>
                                         <option value="4">3/64</option>
                                         <option value="3">3/32</option>
@@ -165,10 +165,29 @@
     <script src="<?=STYLEBASE."home/"; ?>js/custom.js"></script>
     <script>
         $(document).ready(function(){
+
+            document.querySelector('#txtRam').setAttribute("disabled", "disabled");
+
             $('#btnProses').click(function(){
                 $('#frmRekomendasi').submit();
             });
+
+           
+
         });
+
+        function filterHarga()
+        {
+            let harga = document.querySelector('#txtHarga').value;
+            let capRam = document.querySelector('#txtRam');
+
+            if(harga === '5'){
+                capRam.value = '1';
+                capRam.setAttribute("disabled", "disabled");
+            }else{
+                capRam.removeAttribute("disabled");
+            }
+        }
     </script>
 </body>
 
