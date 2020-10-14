@@ -72,6 +72,21 @@ class admin extends Route{
         $this -> toJson($data);
     }
 
+    public function prosesTambahKriteria()
+    {
+        // {'nama':nama, 'bobot':bobot, 'n1':n1, 'n2':n2, 'n3':n3, 'n4':n4, 'n5':n5}
+        $nama = $this -> inp('nama');
+        $bobot = $this -> inp('bobot');
+        $n1 = $this -> inp('n1');
+        $n2 = $this -> inp('n2');
+        $n3 = $this -> inp('n3');
+        $n4 = $this -> inp('n4');
+        $n5 = $this -> inp('n5');
+        
+        $data['status'] = 'sukses';
+        $this -> toJson($data);
+    }
+
     public function logout()
     {
         $this -> goto('login');
